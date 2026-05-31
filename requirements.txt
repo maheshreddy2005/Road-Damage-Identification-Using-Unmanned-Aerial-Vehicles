@@ -1,0 +1,10 @@
+Django>=3.2,<5.0
+ultralytics
+ensemble_boxes
+Pillow
+opencv-python-headless
+matplotlib
+numpy
+gradio
+gunicorn
+whitenoise
