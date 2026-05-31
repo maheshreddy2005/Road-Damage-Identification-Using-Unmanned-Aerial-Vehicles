@@ -1,8 +1,15 @@
-Django==5.2.6
-gunicorn==26.0.0
-numpy==1.26.4
-opencv-python==4.8.1.78
-Pillow==11.3.0
-ultralytics==8.3.248
-tensorflow==2.20.0
-h5py==3.15.1
+Django>=3.2
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.2+cpu
+torchvision==0.16.2+cpu
+tensorflow-cpu
+h5py
+ultralytics
+ensemble_boxes
+Pillow
+opencv-python-headless
+matplotlib
+numpy
+gradio
+gunicorn
+whitenoise

@@ -3,7 +3,7 @@ services:
     name: road-damage-detection
     env: python
     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate"
-    startCommand: "gunicorn Automated_Road_Damage_Detection.wsgi:application"
+    startCommand: "gunicorn Automated_Road_Damage_Detection.wsgi:application --bind 0.0.0.0:$PORT"
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
